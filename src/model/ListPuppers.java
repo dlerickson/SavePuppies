@@ -78,6 +78,12 @@ public class ListPuppers {
 	 *
 	 *
 	 */
+	
+	@Override
+	public String toString() {
+		return "ListPuppers []";
+	}
+	
 
 	// print the puppy deets
 	public String returnPupInfo() {

@@ -37,7 +37,7 @@ public class StartPupProgram {
 
 	private static void editPups() {
 		// TODO Auto-generated method stub
-		System.out.println("Find your next pup! ");
+		System.out.println("What's up pup?! ");
 		System.out.println("Enter: 1 -to call by name.");
 		System.out.println("Enter: 2 -to search by status.");
 		int searchBy = in.nextInt();

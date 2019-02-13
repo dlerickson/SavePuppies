@@ -80,7 +80,7 @@ public class ListPuppersHelper {
 		// TODO Auto-generated method stub
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
-		TypedQuery<ListPuppers> typedQuery = em.createQuery("select lp from ListPuppers lp where lp.name = :selectedName", ListPuppers.class);
+		TypedQuery<ListPuppers> typedQuery = em.createQuery("SELECT lp FROM ListPuppers lp WHERE lp.name = :selectedName", ListPuppers.class);
 		typedQuery.setParameter("selectedName",dogName);
 		
 		List<ListPuppers> foundPups = typedQuery.getResultList();
@@ -92,8 +92,8 @@ public class ListPuppersHelper {
 		// TODO Auto-generated method stub
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
-		TypedQuery<ListPuppers> typedQuery = em.createQuery("select lp from ListPuppers lp where lp.status = :selectedStatus", ListPuppers.class);
-		typedQuery.setParameter("selectedName",dogStatus);
+		TypedQuery<ListPuppers> typedQuery = em.createQuery("SELECT lp FROM ListPuppers lp WHERE lp.status = :selectedStatus", ListPuppers.class);
+		typedQuery.setParameter("selectedStatus",dogStatus);
 		
 		List<ListPuppers> foundPups = typedQuery.getResultList();
 		em.close();
