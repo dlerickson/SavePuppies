@@ -16,9 +16,9 @@
 			type="text" name="year" placeholder="yyyy" size="4"> 
 		Adopter Name: <input type="text" name="adopterName"><br /> 
 		Puppy Details:<br /> <select name="allItemsToAdd" multiple size="6">
-			<c:forEach items="${requestScope.allDogs}" var="currentitem">
-				<option value="${currentitem.id}">${currentitem.name}|
-					${currentitem.favToy}|
+			<c:forEach items="${requestScope.listOfPups}" var="currentitem">
+				<option value="${currentitem.id}">${currentitem.name}
+					${currentitem.favToy}
 					${currentitem.status}</option>
 			</c:forEach>
 		</select> <br /> <input type="submit" value="Create List and Add Items">
